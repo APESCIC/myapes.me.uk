@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "templateName": "APES CIC Codex agents template",
-  "templateVersion": "v0.1.0b",
+  "templateVersion": "v0.1.1b",
   "status": "beta",
   "sourceRepository": "APESCIC/agents-template",
   "defaultBranch": "main",

@@ -1,11 +1,14 @@
 ---
 name: apes-codex-plan
-description: Use when preparing an APES CIC implementation plan that must include issue, branch, validation, release, Cloudron, public-folder, and GitHub handoff decisions.
+description: Use when preparing an APES CIC implementation plan (Codex or
+JetBrains-assisted) that must include issue, branch, validation, release,
+Cloudron, public-folder, and GitHub handoff decisions.
 ---
 
 # APES Codex Plan
 
-Use this skill to produce a decision-complete plan before implementation.
+Use this skill to produce a decision-complete plan before implementation, for both
+Codex and JetBrains-assisted work.
 
 Required structure:
 
@@ -19,7 +22,7 @@ Website type:
 Hosting target:
 Local execution environment:
 Local validation status:
-Codex browser live preview:
+Route preview (Codex browser or equivalent):
 Environment notes:
 Files likely to change:
 Implementation plan:
@@ -41,7 +44,8 @@ The plan must record:
   relevant
 - Cloudron LAMP and hosting assumptions where relevant
 - GitHub issue and pull request expectations
-- validation commands and Codex browser preview evidence or blocker
+- validation commands and route-preview evidence (Codex browser or equivalent) or
+  blocker
 - merge, cleanup, and issue-closure expectations
 
 Do not implement inside this skill. End with the specific decisions or

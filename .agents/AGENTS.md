@@ -1,9 +1,10 @@
-# APES CIC Agent Instructions for Codex
+# APES CIC Agent Instructions for Codex and JetBrains
 
-Use this file as the durable APES CIC repository guidance for Codex-first local
-work. It is intentionally repository-safe: it contains no credentials, private
-configuration, environment values, database dumps, generated secrets, API keys,
-private keys, OAuth secrets, or production operational values.
+Use this file as the durable APES CIC repository guidance for Codex-first and
+JetBrains-assisted local work. It is intentionally repository-safe: it contains
+no credentials, private configuration, environment values, database dumps,
+generated secrets, API keys, private keys, OAuth secrets, or production
+operational values.
 
 ## 1. Instruction Priority
 
@@ -14,7 +15,8 @@ configuration files.
 
 Directory routing:
 
-- Codex setup, scripts, prompts, and workflow docs live in `/.codex/`.
+- Codex/JetBrains setup, scripts, prompts, and workflow docs live in
+  `/.codex/`.
 - GitHub files live in `/.github/`.
 - Agent guidance, manifests, and skills live in `/.agents/`.
 
@@ -24,7 +26,7 @@ Priority order:
 2. Security, privacy, UK GDPR, branch protection, no-secrets, no-destructive
    actions, and no-deployment rules in this file.
 3. Repository-specific guidance that does not weaken APES CIC safeguards.
-4. Tool-specific Codex rules.
+4. Tool-specific Codex and JetBrains rules.
 5. General preferences and templates in this file.
 
 If local guidance conflicts with this file, follow the stricter APES CIC
@@ -46,7 +48,7 @@ different base branch or branch name.
 
 ## 3. Non-Negotiable Safeguards
 
-Before planning or editing, Codex must:
+Before planning or editing, Codex and JetBrains-assisted workflows must:
 
 1. Confirm the active repository or workspace.
 2. Confirm the current branch.
@@ -78,8 +80,8 @@ Before planning or editing, Codex must:
     of installing them.
 19. For UI, website, app, route, public-folder, or visual changes, use the
     approved local preview path where available, start it only when safe and in
-    scope, inspect affected routes in the Codex browser, and record preview
-    evidence or the exact blocker.
+    scope, inspect affected routes in the approved preview workflow (Codex browser
+    when available), and record preview evidence or the exact blocker.
 
 If safety is uncertain, pause and provide clear options.
 
@@ -88,7 +90,10 @@ If safety is uncertain, pause and provide clear options.
 Default flow:
 
 ```text
-Understand request -> Inspect repository -> Review Codex environment guidance -> Ask grouped decisions -> Issue decision -> Branch decision -> Plan -> User approval -> Implement -> Update issue where relevant -> Validate -> Review diff -> Completion summary
+Understand request -> Inspect repository -> Review Codex/JetBrains environment
+guidance -> Ask grouped decisions -> Issue decision -> Branch decision -> Plan ->
+User approval -> Implement -> Update issue where relevant -> Validate -> Review
+diff -> Completion summary
 ```
 
 Do not skip a stage unless the user explicitly approves the skip, or the task
@@ -122,8 +127,8 @@ decisions before implementation:
    private configuration, Windows, Linux, local execution, deployment, or
    hosting.
 7. Local execution environment or blocker.
-8. Codex browser live-preview requirement or blocker for UI, website, app,
-   route, public-folder, or visual changes.
+8. Route preview (Codex browser or equivalent) requirement or blocker for UI,
+   website, app, route, public-folder, or visual changes.
 9. Validation required before handoff.
 
 ## 6. Required Planning Response
@@ -140,7 +145,7 @@ Website type:
 Hosting target:
 Local execution environment:
 Local validation status:
-Codex browser live preview:
+Route preview evidence (Codex browser or equivalent):
 Environment notes:
 Files likely to change:
 Implementation plan:
@@ -159,8 +164,9 @@ update expectations, branch expectations, merge expectations, issue-closure
 prompt expectations, and cleanup expectations where relevant.
 
 For UI, website, app, route, public-folder, or visual changes, the plan must
-also state the approved local preview command, expected Codex browser route
-inspection, and fallback wording if preview cannot start or open safely.
+also state the approved local preview command, expected route inspection method
+(Codex browser when available), and fallback wording if preview cannot start or
+open safely.
 
 Do not implement until the user approves the plan or explicitly says to start
 implementation.
@@ -237,8 +243,9 @@ repository guidance review.
 For browser-served work, prefer a documented local preview script, package
 script, PHP built-in server command, static server command, Laragon route, or
 other repository-approved preview path. Start it only when task approval and
-repository guidance allow local execution. Inspect affected routes in the Codex
-browser and record route notes, screenshot status, and console or visible
+repository guidance allow local execution. Inspect affected routes using the
+approved preview path (Codex browser when available) and record route notes,
+screenshot status, and console or visible
 errors. If preview cannot safely run, record the exact blocker.
 
 Common Node checks:
@@ -395,7 +402,8 @@ After implementation, report:
 5. README, Change Log Hub, root changelog, public changelog, version record,
    and generated-output status.
 6. Public-folder and local validation status, including blockers.
-7. Codex browser live-preview status, including inspected URL or blocked reason.
+7. Route preview status (Codex browser or equivalent), including inspected URL or
+   blocked reason.
 8. Website type status.
 9. Cloudron LAMP and hosting status where relevant.
 10. GitHub issue status.
@@ -419,7 +427,7 @@ Codex guidance. When updating it:
   synchronized.
 - Keep `.codex/prompts/*.prompt.md` as Markdown only; do not add `.txt`
   prompt files.
-- Prefer repo skills in `.agents/skills/` for current Codex workflows.
+- Prefer repo skills in `.agents/skills/` for current Codex/JetBrains workflows.
 - Keep `.codex/hooks/` and `.codex/rules/` as examples unless active
   enforcement is separately approved.
 - Keep `.codex/config.toml` free of auth, provider, telemetry, notification,

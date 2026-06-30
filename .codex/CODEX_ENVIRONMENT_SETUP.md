@@ -1,6 +1,7 @@
 # Codex Environment Setup
 
-Use this file before running local commands for APES CIC repository work.
+Use this file before running local commands for APES CIC repository work in
+Codex or JetBrains workflows.
 
 ## Baseline Rules
 
@@ -14,9 +15,10 @@ Use this file before running local commands for APES CIC repository work.
 - Keep private configuration, secrets, local dumps, generated credentials, and
   private data out of repository changes.
 
-## Tool Discovery
+## Tool Discovery (Codex and JetBrains)
 
-Run the read-only discovery script before choosing validation commands:
+Run the read-only discovery script before choosing validation commands (works from
+Codex shell sessions and JetBrains terminals):
 
 ```powershell
 pwsh .\.codex\scripts\discover-local-dev-tools.ps1
@@ -66,7 +68,8 @@ For UI, website, app, route, public-folder, or visual changes:
 
 1. Confirm the approved local preview command or local preview blocker.
 2. Start the preview only when safe and in scope.
-3. Open the affected route in the Codex browser.
+3. Open the affected route in the approved preview mechanism (Codex browser
+   when available).
 4. Record local URL, route notes, screenshot status, visible errors, and console
    blockers.
 

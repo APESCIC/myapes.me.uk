@@ -1,7 +1,8 @@
-# APES CIC Codex Bootstrap
+# APES CIC Codex + JetBrains Bootstrap
 
-This repository is the APES CIC Codex agents template. Before planning,
-editing, reviewing, committing, or running repository work, load and follow:
+This repository is the APES CIC Codex agents template, and the same guidance is
+applicable to JetBrains-assisted workflows. Before planning, editing,
+reviewing, committing, or running repository work, load and follow:
 
 1. `.agents/AGENTS.md`
 2. Any task-relevant local guidance such as `README.md`, `CONTRIBUTING.md`,

@@ -1,11 +1,13 @@
-# Safe project-local Codex configuration for APES CIC repositories.
+# Safe project-local assistant configuration (Codex and JetBrains).
 #
 # This file intentionally avoids auth, provider, telemetry, notification,
-# profile, and machine-local settings. Keep those in user-level Codex config.
+# profile, and machine-local settings. Keep those in user-level Codex/JetBrains
+# config.
 
 project_doc_max_bytes = 65536
 project_doc_fallback_filenames = ["INSTRUCTIONS.md"]
 
 # When this trusted project-local config is loaded, include the canonical APES
-# CIC guidance without relying only on the small root bootstrap.
+# CIC guidance for Codex and JetBrains workflows without relying only on the small
+# root bootstrap.
 model_instructions_file = "../.agents/AGENTS.md"

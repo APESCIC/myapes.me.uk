@@ -1,6 +1,8 @@
 ---
 name: apes-repo-start
-description: Use at the start of APES CIC repository work to inspect guidance, branch state, working tree state, local tooling, and task scope before planning or implementation.
+description: Use at the start of APES CIC repository work (Codex or JetBrains
+assisted) to inspect guidance, branch state, working tree state, local tooling,
+and task scope before planning or implementation.
 ---
 
 # APES Repo Start
@@ -18,7 +20,7 @@ Use this skill before planning or implementation in an APES CIC repository.
 5. Run `.codex/scripts/discover-local-dev-tools.ps1` when present.
 6. Identify update type, website type, hosting target, public-folder impact,
    release-record impact, GitHub issue status, branch decision, validation
-   path, and Codex browser preview requirement.
+   path, and preview route evidence requirement (Codex browser when available).
 7. Do not edit files, create branches, stage, commit, push, deploy, install
    tools, or mutate Git state until the user has approved the required decision
    and plan.
