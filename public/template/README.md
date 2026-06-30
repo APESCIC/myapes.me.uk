@@ -32,7 +32,7 @@ require_once __DIR__ . '/../template/layout.php';
 $page = [
     'title' => 'Example | MyAPES',
     'description' => 'Example route description.',
-    'canonical' => 'https://beta.apes.me.uk/example/',
+    'canonical' => 'https://myapes.me.uk/example/',
     'robots' => 'index, follow',
     'currentPath' => '/example/'
 ];
@@ -54,3 +54,4 @@ The template uses existing APES brand assets and tokens:
 - Logo asset: `/assets/apes-logo-navbar-72h-C6PH2zPj.png`
 
 Do not replace colors, typography, spacing, or brand copy in shared template output unless branding guidance is updated.
+

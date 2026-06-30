@@ -2,6 +2,39 @@
 
 All notable public-facing MyAPES changes are recorded here.
 
+## v3.1.1b - 2026-07-01
+
+Status: Beta
+
+Change type: Patch
+
+Summary: Migrated production metadata to `myapes.me.uk`, aligned SEO canonical/sitemap/OG references, and added public deployment guidance for `/public` with Cloudron + JetBrains workflows.
+
+Detailed changes:
+
+- Updated all public page canonical URLs from the prior beta domain to `myapes.me.uk` (including homepage OG URL).
+- Updated `public/sitemap.xml` and `public/robots.txt` with production domain.
+- Updated template README canonical example to the production domain.
+- Added Cloudron hosting and local preview documentation in `README.md`.
+- Updated public release records and version file (`v3.1.1b`).
+
+Affected areas:
+
+- SEO/metadata
+- Deployment documentation
+- Change Log Hub and version records
+- Cloudron/JB workflow guidance
+
+Version decision:
+
+- Patch beta production-readiness release, version `v3.1.1b`.
+
+Validation:
+
+- `php -l public/template/layout.php`
+- `rg -n "https://beta\\.apes\\.me\\.uk" public`
+- `php -S 127.0.0.1:8080 -t public` route checks (`/`, `/support/`, `/sitemap.xml`, `/does-not-exist`)
+
 ## v3.1.0b - 2026-06-30
 
 Status: Beta

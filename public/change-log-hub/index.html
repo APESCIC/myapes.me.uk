@@ -10,7 +10,7 @@
       content="Track MyAPES website releases, public route changes, content migrations, fixes and validation notes."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <link rel="canonical" href="https://beta.apes.me.uk/change-log-hub/" />
+    <link rel="canonical" href="https://myapes.me.uk/change-log-hub/" />
     <link rel="stylesheet" href="../assets/css/site.css" />
   </head>
   <body>
@@ -76,13 +76,13 @@
                 compliance changes and internal platform maintenance.
               </p>
               <div class="badge-row">
-                <span class="pill">Current version v3.1.0b</span>
+                <span class="pill">Current version v3.1.1b</span>
                 <span class="pill is-warm">Minor beta update</span>
                 <span class="pill">Public resource hub</span>
               </div>
               <div class="hero-actions">
                 <a class="button button-secondary" href="#release-list">Expand all releases</a>
-                <a class="button button-secondary" href="#release-v310b">View current release</a>
+                <a class="button button-secondary" href="#release-v311b">View current release</a>
               </div>
             </section>
 
@@ -148,10 +148,93 @@
 
               <div id="release-list" class="release-list">
                 <article
-                  id="release-v310b"
+                  id="release-v311b"
                   class="release-item"
                   data-release-item
                   data-current="true"
+                  data-version="v3.1.1b"
+                  data-date="2026-07-01"
+                  data-status="beta"
+                  data-type="patch"
+                  data-tags="changed accessibility public-facing compliance"
+                >
+                  <details open>
+                    <summary>
+                      <span class="release-summary-version">v3.1.1b</span>
+                      <span class="release-summary-date">2026-07-01</span>
+                    </summary>
+                    <div class="release-body">
+                      <div class="badge-row release-badges">
+                        <span class="pill">Version v3.1.1b</span>
+                        <span class="pill">Beta</span>
+                        <span class="pill">Changed</span>
+                        <span class="pill">Public-facing</span>
+                        <span class="pill">Compliance</span>
+                      </div>
+                      <h3>Summary</h3>
+                      <p>
+                        Migrated production metadata from beta to production domain, added explicit
+                        Cloudron/LAMP and local preview guidance, and aligned release/version records
+                        for Codex and JetBrains workflows.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Updated canonical/OG metadata, robots and sitemap entries from
+                          the previous beta hostname to <code>myapes.me.uk</code>.
+                        </li>
+                        <li>
+                          Added deployment and runtime guidance in <code>README.md</code>, including
+                          the explicit <code>/public</code> web root and local preview command.
+                        </li>
+                        <li>
+                          Updated example template canonical references to production domain for
+                          editor onboarding and consistency checks.
+                        </li>
+                        <li>
+                          Bumped production version to <code>v3.1.1b</code> and updated release
+                          metadata in changelog and change-log hub records.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>SEO metadata and sitemap surface</li>
+                        <li>Deployment documentation and local preview process</li>
+                        <li>Release records and versioned documentation</li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v3.1.0b</li>
+                        <li>New version: v3.1.1b</li>
+                        <li>Version type: patch beta</li>
+                        <li>Reason for version bump: metadata alignment for production operations.</li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li><code>php -l public/template/layout.php</code></li>
+                        <li>
+                          <code>rg -n "https://beta\.apes\.me\.uk" public</code> (no remaining
+                          results expected)
+                        </li>
+                        <li>Local route checks at <code>http://127.0.0.1:8080/</code></li>
+                        <li>
+                          Local route checks at <code>http://127.0.0.1:8080/support/</code>
+                        </li>
+                        <li>
+                          Local route checks at <code>http://127.0.0.1:8080/sitemap.xml</code>
+                        </li>
+                        <li>
+                          Non-existent route check at <code>http://127.0.0.1:8080/does-not-exist</code>
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v310b"
+                  class="release-item"
+                  data-release-item
                   data-version="v3.1.0b"
                   data-date="2026-06-30"
                   data-status="beta"
@@ -327,7 +410,7 @@
                     <div class="release-body">
                       <h3>Summary</h3>
                       <p>
-                        Converted the active MyAPES beta site into a fully static public website,
+                          Converted the prior beta site into a fully static public website,
                         retired the in-repository private runtime, and preserved older live routes
                         with transition pages or redirects.
                       </p>
@@ -335,7 +418,7 @@
                       <ul class="clean-list mini-list">
                         <li>
                           Generated static HTML for the public route set and switched canonicals,
-                          sitemap entries and robots references to <code>beta.apes.me.uk</code>.
+                          sitemap entries and robots references to the previous beta hostname.
                         </li>
                         <li>
                           Removed public navigation and calls to action that depended on the retired
@@ -751,3 +834,4 @@
     <script defer src="../assets/js/site.js"></script>
   </body>
 </html>
+

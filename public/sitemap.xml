@@ -1,159 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beta.apes.me.uk/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/about/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/about/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/services/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/services/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/shelter-rescue/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/shelter-rescue/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/pet-care-clinic/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/pet-care-clinic/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/resources/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/resources/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/resource-hub/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/resource-hub/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/fun-zone/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/fun-zone/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/contact/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/contact/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/support/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/support/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/account/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/account/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/donate/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/donate/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/privacy/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/privacy/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/terms/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/terms/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/cookies/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/cookies/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/accessibility/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/accessibility/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/complaints/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/complaints/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/data-requests/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/data-requests/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/help-us/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/help-us/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/information/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/information/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/myapes-news/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/myapes-news/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/service-users/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/service-users/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/stripe-accounts/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/stripe-accounts/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/apes-communities/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/apes-communities/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/myapes-newsletters/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/myapes-newsletters/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://beta.apes.me.uk/change-log-hub/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://myapes.me.uk/change-log-hub/</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
+
+
