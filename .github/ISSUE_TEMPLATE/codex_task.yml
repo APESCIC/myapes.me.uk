@@ -1,0 +1,114 @@
+name: Codex task
+description: Track non-trivial APES CIC Codex repository work.
+title: "[Codex]: "
+labels:
+  - codex
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for non-trivial APES CIC repository work that needs scope,
+        validation, release, or audit tracking.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should change?
+    validations:
+      required: true
+  - type: dropdown
+    id: update_type
+    attributes:
+      label: Update type
+      options:
+        - feature
+        - bug fix
+        - cleanup
+        - migration
+        - refactor
+        - documentation
+        - security
+        - compliance
+        - hosting
+        - urgent hotfix
+        - custom
+    validations:
+      required: true
+  - type: dropdown
+    id: website_type
+    attributes:
+      label: Website type
+      options:
+        - documentation only
+        - static website
+        - PHP website
+        - MySQL database website
+        - CMS
+        - custom portal
+        - small web application
+        - migration
+        - merge
+        - custom
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Files, folders, routes, or behavior in scope.
+    validations:
+      required: true
+  - type: textarea
+    id: non_scope
+    attributes:
+      label: Non-scope
+      description: Files, folders, routes, or behavior out of scope.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Functional, security, privacy, hosting, release, or documentation requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing required
+      description: Local validation, preview, browser routes, CI, or known blockers.
+    validations:
+      required: true
+  - type: textarea
+    id: release
+    attributes:
+      label: Release impact
+      description: README, changelog, version, Change Log Hub, generated output, public records.
+    validations:
+      required: true
+  - type: textarea
+    id: hosting
+    attributes:
+      label: Hosting and environment impact
+      description: Cloudron, MySQL, Redis, LDAP, email, rewrites, private config, Windows, Linux, deployment.
+    validations:
+      required: false
+  - type: textarea
+    id: public_folder
+    attributes:
+      label: Public folder, SEO, sitemap, footer, Newsroom, and error pages
+    validations:
+      required: false
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Security and UK GDPR notes
+      description: Personal data, lawful basis, consent, retention, access control, audit, deletion, third parties.
+    validations:
+      required: false

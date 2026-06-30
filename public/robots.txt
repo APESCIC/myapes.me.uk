@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /storage/
+Disallow: /uploads/
+Disallow: /documents/
+
+Sitemap: https://beta.apes.me.uk/sitemap.xml

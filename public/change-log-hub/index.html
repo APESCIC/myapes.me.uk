@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#075b5b" />
+    <title>Change Log Hub | MyAPES website releases</title>
+    <meta
+      name="description"
+      content="Track MyAPES website releases, public route changes, content migrations, fixes and validation notes."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://beta.apes.me.uk/change-log-hub/" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <header class="header-shell" data-shared-header>
+        <div class="topbar" data-shared-topbar>
+          <div class="wrap topbar-inner">
+            <div>MyAPES CIC public resource and tool hub</div>
+            <div><a href="../support/index.html">Get support</a></div>
+          </div>
+        </div>
+        <div class="wrap header-inner">
+          <a class="brand" href="../index.html" aria-label="MyAPES home">
+            <img src="../assets/apes-logo-navbar-72h-C6PH2zPj.png" alt="MyAPES logo" />
+            <div class="brand-copy">
+              <strong>MyAPES</strong>
+              <span>Association of Protecting Exotic Species CIC</span>
+            </div>
+          </a>
+          <nav class="site-nav site-nav-desktop" aria-label="Primary navigation" data-desktop-nav>
+            <a href="../index.html">Home</a>
+            <a href="../services/index.html">Services</a>
+            <a href="../resource-hub/index.html">Resource Hub</a>
+            <a href="../fun-zone/index.html">Fun Zone</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../change-log-hub/index.html" aria-current="page">Updates</a>
+            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a>
+          </nav>
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            Menu
+          </button>
+          <nav
+            id="mobile-nav"
+            class="site-nav site-nav-mobile"
+            aria-label="Mobile navigation"
+            data-mobile-nav
+          >
+            <a href="../index.html">Home</a>
+            <a href="../services/index.html">Services</a>
+            <a href="../resource-hub/index.html">Resource Hub</a>
+            <a href="../fun-zone/index.html">Fun Zone</a>
+            <a href="../support/index.html">Support</a>
+            <a href="../change-log-hub/index.html" aria-current="page">Updates</a>
+            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a>
+          </nav>
+        </div>
+      </header>
+      <main id="main-content">
+        <div class="wrap hero">
+          <article class="change-log-page">
+            <section class="hero-card change-log-hero">
+              <p class="eyebrow">Release records</p>
+              <h1>Change Log Hub</h1>
+              <p class="lead">
+                Track every major release for MyAPES, including public route updates, fixes,
+                compliance changes and internal platform maintenance.
+              </p>
+              <div class="badge-row">
+                <span class="pill">Current version v3.1.0b</span>
+                <span class="pill is-warm">Minor beta update</span>
+                <span class="pill">Public resource hub</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="#release-list">Expand all releases</a>
+                <a class="button button-secondary" href="#release-v310b">View current release</a>
+              </div>
+            </section>
+
+            <section class="section-shell section-stack change-log-shell" data-release-hub>
+              <div class="release-controls">
+                <label class="release-search-label" for="release-search"
+                  >Search release notes</label
+                >
+                <input
+                  id="release-search"
+                  class="release-search"
+                  type="search"
+                  placeholder="Search release notes"
+                  aria-label="Search release notes"
+                  data-release-search
+                />
+                <div class="release-filter-chips" role="group" aria-label="Release filters">
+                  <button class="release-chip is-active" type="button" data-filter="all">
+                    All releases
+                  </button>
+                  <button class="release-chip" type="button" data-filter="current">
+                    Current release
+                  </button>
+                  <button class="release-chip" type="button" data-filter="beta">Beta</button>
+                  <button class="release-chip" type="button" data-filter="added">Added</button>
+                  <button class="release-chip" type="button" data-filter="changed">Changed</button>
+                  <button class="release-chip" type="button" data-filter="fixed">Fixed</button>
+                  <button class="release-chip" type="button" data-filter="removed">Removed</button>
+                  <button class="release-chip" type="button" data-filter="security">
+                    Security
+                  </button>
+                  <button class="release-chip" type="button" data-filter="compliance">
+                    Compliance
+                  </button>
+                  <button class="release-chip" type="button" data-filter="accessibility">
+                    Accessibility
+                  </button>
+                  <button class="release-chip" type="button" data-filter="public-facing">
+                    Public-facing
+                  </button>
+                  <button class="release-chip" type="button" data-filter="internal-only">
+                    Internal-only
+                  </button>
+                </div>
+                <div class="release-action-row">
+                  <button
+                    class="button button-secondary"
+                    type="button"
+                    data-release-action="expand"
+                  >
+                    Expand all
+                  </button>
+                  <button
+                    class="button button-secondary"
+                    type="button"
+                    data-release-action="collapse"
+                  >
+                    Collapse all
+                  </button>
+                </div>
+                <p class="release-result-summary" data-release-results></p>
+              </div>
+
+              <div id="release-list" class="release-list">
+                <article
+                  id="release-v310b"
+                  class="release-item"
+                  data-release-item
+                  data-current="true"
+                  data-version="v3.1.0b"
+                  data-date="2026-06-30"
+                  data-status="beta"
+                  data-type="minor"
+                  data-tags="added changed accessibility public-facing navigation"
+                >
+                  <details open>
+                    <summary>
+                      <span class="release-summary-version">v3.1.0b</span>
+                      <span class="release-summary-date">2026-06-30</span>
+                    </summary>
+                    <div class="release-body">
+                      <div class="badge-row release-badges">
+                        <span class="pill">Version v3.1.0b</span>
+                        <span class="pill">Beta</span>
+                        <span class="pill">Added</span>
+                        <span class="pill">Changed</span>
+                        <span class="pill">Public-facing</span>
+                        <span class="pill">Accessibility</span>
+                      </div>
+                      <h3>Summary</h3>
+                      <p>
+                        Updated MyAPES into a public resource and tool hub, added the Fun Zone menu,
+                        added public tool cards for CareBase, APES Social, Discord, Contact Centre,
+                        Feedback and APES Tube, and clarified the separation between MyAPES public
+                        resources and MyAPES Account private service user tools.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Updated the homepage hero, calls to action and public/private portal
+                          messaging.
+                        </li>
+                        <li>
+                          Added public route pages for <code>/resource-hub/</code>,
+                          <code>/fun-zone/</code>, <code>/support/</code> and
+                          <code>/account/</code>.
+                        </li>
+                        <li>
+                          Added Fun Zone cards for APES CareBase, APES Social, APES Discord, APES
+                          Contact Centre, APES Feedback and APES Tube.
+                        </li>
+                        <li>
+                          Updated shared navigation, mobile navigation, footer links and external
+                          link indicators.
+                        </li>
+                        <li>
+                          Updated sitemap, smoke-test coverage, public changelog, root changelog,
+                          version records and retained template utilities.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Public-facing navigation</li>
+                        <li>Resource Hub</li>
+                        <li>Fun Zone</li>
+                        <li>Support signposting</li>
+                        <li>Public/private portal separation</li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v3.0.1b</li>
+                        <li>New version: v3.1.0b</li>
+                        <li>Version type: minor beta update</li>
+                        <li>
+                          Reason for version bump: public-facing navigation and resource hub route
+                          expansion.
+                        </li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li><code>npm run validate</code></li>
+                        <li><code>npm run smoke</code></li>
+                        <li>HTTP preview at <code>http://127.0.0.1:8080/</code></li>
+                        <li>Direct <code>file:///</code> homepage check</li>
+                        <li>Desktop and mobile browser checks</li>
+                        <li>
+                          Manual launch checks required for APES Feedback and Discord invite
+                          availability.
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v301b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v3.0.1b"
+                  data-date="2026-06-18"
+                  data-status="beta"
+                  data-type="patch"
+                  data-tags="changed removed compliance public-facing"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v3.0.1b</span>
+                      <span class="release-summary-date">2026-06-18</span>
+                    </summary>
+                    <div class="release-body">
+                      <div class="badge-row release-badges">
+                        <span class="pill">Version v3.0.1b</span>
+                        <span class="pill">Beta</span>
+                        <span class="pill">Changed</span>
+                        <span class="pill">Removed</span>
+                      </div>
+                      <h3>Summary</h3>
+                      <p>
+                        Completed the public-only cleanup by removing legacy private-entry and
+                        redirect surfaces, pruning unused runtime folders, and aligning scripts and
+                        documentation to the active static website scope.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Removed legacy private-entry and transition route folders from
+                          <code>public/</code>.
+                        </li>
+                        <li>
+                          Updated smoke and public-root validation scripts to validate only active
+                          public website routes and files.
+                        </li>
+                        <li>
+                          Removed unused private-runtime stylesheet blocks from the shared
+                          stylesheet.
+                        </li>
+                        <li>
+                          Updated repository documentation and release records to reflect a
+                          public-only website scope.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Public route surface</li>
+                        <li>Preview and validation workflow</li>
+                        <li>Public release records</li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v3.0.0b</li>
+                        <li>New version: v3.0.1b</li>
+                        <li>Version type: patch beta</li>
+                        <li>
+                          Reason for version bump: completed cleanup of legacy private-entry
+                          surfaces after static migration.
+                        </li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li><code>npm run validate</code></li>
+                        <li><code>npm run smoke</code></li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v300b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v3.0.0b"
+                  data-date="2026-06-18"
+                  data-status="beta"
+                  data-type="major"
+                  data-tags="changed removed public-facing"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v3.0.0b</span>
+                      <span class="release-summary-date">2026-06-18</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Converted the active MyAPES beta site into a fully static public website,
+                        retired the in-repository private runtime, and preserved older live routes
+                        with transition pages or redirects.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Generated static HTML for the public route set and switched canonicals,
+                          sitemap entries and robots references to <code>beta.apes.me.uk</code>.
+                        </li>
+                        <li>
+                          Removed public navigation and calls to action that depended on the retired
+                          PHP private runtime.
+                        </li>
+                        <li>
+                          Replaced older private-entry paths with static transition pages so legacy
+                          bookmarks did not fail immediately during migration.
+                        </li>
+                        <li>
+                          Added temporary placeholders or redirects for older live-only routes
+                          during migration.
+                        </li>
+                        <li>
+                          Switched local preview to a Node-based static server so the beta site no
+                          longer depends on PHP just to preview public pages.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Website: public route output, transition routes and release records</li>
+                        <li>Routes: beta canonicals, sitemap and legacy live URL preservation</li>
+                        <li>
+                          User groups: public visitors, editors and anyone following older live-site
+                          links into the beta website
+                        </li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v2.0.0b</li>
+                        <li>New version: v3.0.0b</li>
+                        <li>
+                          Reason: major beta architecture change removing the in-repository private
+                          runtime from the active website
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v200b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v2.0.0b"
+                  data-date="2026-06-17"
+                  data-status="beta"
+                  data-type="major"
+                  data-tags="added changed security internal-only"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v2.0.0b</span>
+                      <span class="release-summary-date">2026-06-17</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Implemented the active plain-PHP private runtime with MySQL-backed
+                        registration and login, Cloudron LDAP worker sign-in, optional Redis-backed
+                        rate limiting, and the PHP 8.3 preview workflow.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Added a lightweight plain-PHP service and controller layer for
+                          registration, login, password reset, worker LDAP sign-in and protected
+                          dashboard routes.
+                        </li>
+                        <li>
+                          Added <code>public/.htaccess</code> and preview-router updates for clean
+                          URLs and noindex behaviour on private-entry surfaces.
+                        </li>
+                        <li>
+                          Wired the active runtime to MySQL, Cloudron LDAP, Cloudron mail variables
+                          and optional Redis-backed rate limiting/session support.
+                        </li>
+                        <li>
+                          Switched the supported preview and PHP validation path to the PHP 8.3
+                          wrapper.
+                        </li>
+                        <li>
+                          Refreshed README and the hosting, security, operations, migration and
+                          issue notes to remove active Laravel/Filament assumptions.
+                        </li>
+                        <li>
+                          Marked legacy sync tooling and archive scaffolds as historical material
+                          rather than active runtime.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Website: public web root, private runtime, and release records</li>
+                        <li>
+                          Routes: clean URLs, password reset, worker login and protected dashboard
+                          routes
+                        </li>
+                        <li>
+                          User groups: site editors, private-platform users, workers and maintainers
+                          using the public preview workflow
+                        </li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v1.1.1b</li>
+                        <li>New version: v2.0.0b</li>
+                        <li>
+                          Reason: major beta architecture update for the plain-PHP private stack
+                        </li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Checks run: <code>npm run validate</code> and <code>npm run smoke</code>
+                        </li>
+                        <li>
+                          Route checks covered <code>/</code>, private-entry paths,
+                          <code>robots.txt</code> and <code>sitemap.xml</code>
+                        </li>
+                        <li>
+                          Manual checks still recommended: homepage styling, private forms, footer
+                          links and live Cloudron service connectivity
+                        </li>
+                        <li>
+                          Known limitations: richer CRUD, uploads, approval tooling, and production
+                          verification of SMTP and Redis session persistence still remain
+                        </li>
+                        <li>
+                          Rollback notes: restore the v1.1.1b release records and private-platform
+                          documentation if the plain-PHP architecture must be reverted
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v111b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v1.1.1b"
+                  data-date="2026-06-17"
+                  data-status="beta"
+                  data-type="patch"
+                  data-tags="fixed accessibility internal-only"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v1.1.1b</span>
+                      <span class="release-summary-date">2026-06-17</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Fixed the local VS Code preview workflow by directing editors to the
+                        supported PHP preview server instead of unsupported
+                        <code>file://</code> rendering.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Confirmed the white page with plain text was caused by opening
+                          <code>public/index.html</code> directly from disk.
+                        </li>
+                        <li>
+                          Updated the VS Code combined preview task so it opens
+                          <code>http://127.0.0.1:8080/</code> inside VS Code Simple Browser.
+                        </li>
+                        <li>
+                          Removed misleading <code>livePreview.*</code> workspace settings that
+                          pointed at an extension not installed in this workspace.
+                        </li>
+                        <li>
+                          Added a local PHP fallback path so preview and validation use the
+                          installed Winget PHP 8.3 runtime when AMPPS PHP 8.2 is unavailable.
+                        </li>
+                        <li>
+                          Updated README and preview guidance so <code>npm run preview:php82</code>,
+                          <code>http://127.0.0.1:8080/</code> and the embedded VS Code preview path
+                          are the default editing workflow.
+                        </li>
+                        <li>Kept the public route structure and root-relative assets unchanged.</li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Website: local editor workflow for myapes.me.uk</li>
+                        <li>
+                          Routes: homepage preview, static asset loading and preview support
+                          guidance
+                        </li>
+                        <li>
+                          User groups: site editors, maintainers and reviewers using VS Code locally
+                        </li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v1.1.0b</li>
+                        <li>New version: v1.1.1b</li>
+                        <li>
+                          Reason: patch-level workflow fix with no public route or content model
+                          change
+                        </li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Checks run: <code>npm run validate</code> and <code>npm run smoke</code>
+                        </li>
+                        <li>
+                          Route checks run through local preview for the homepage,
+                          <code>robots.txt</code>, and <code>sitemap.xml</code>
+                        </li>
+                        <li>
+                          Manual checks still recommended: homepage styling, footer links and
+                          embedded VS Code preview confirmation
+                        </li>
+                        <li>
+                          Known limitations: direct <code>file://</code> preview remains unsupported
+                          by design
+                        </li>
+                        <li>
+                          Rollback notes: restore the v1.1.0b workspace and preview guidance if
+                          needed
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v110b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v1.1.0b"
+                  data-date="2026-06-16"
+                  data-status="beta"
+                  data-type="minor"
+                  data-tags="added changed public-facing"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v1.1.0b</span>
+                      <span class="release-summary-date">2026-06-16</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Converted the MyAPES public website from PHP-rendered pages to a static
+                        HTML, CSS and JavaScript site, created missing public menu pages, and
+                        rebuilt the Change Log Hub on the APES reference model.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Replaced the active public PHP front controller with static pages served
+                          from <code>public/</code>.
+                        </li>
+                        <li>
+                          Added missing public routes for Donate, Privacy Notice, Terms of Service,
+                          MyAPES News, Service Users, Stripe Accounts, APES Communities and MyAPES
+                          Newsletters.
+                        </li>
+                        <li>
+                          Preserved out-of-scope private-entry surfaces while removing obsolete
+                          React/Vite public code and legacy built frontend bundles.
+                        </li>
+                        <li>
+                          Rebuilt the Change Log Hub, updated the sitemap and robots policy, and
+                          aligned README plus release records with the new public architecture.
+                        </li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Website: myapes.me.uk public site</li>
+                        <li>
+                          Routes: homepage, public content routes, change-log hub, footer links and
+                          sitemap
+                        </li>
+                        <li>
+                          User groups: service users, visitors, supporters, newsletter readers and
+                          public APES audiences
+                        </li>
+                      </ul>
+                      <h3>Version decision</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Previous version: v1.0.1b</li>
+                        <li>New version: v1.1.0b</li>
+                        <li>
+                          Reason: public-facing content and route expansion with architecture
+                          simplification, but no stable launch yet
+                        </li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li>
+                          Checks run: public-root validation, smoke tests and local preview route
+                          checks
+                        </li>
+                        <li>
+                          Manual checks: homepage, menu pages, footer links, robots, sitemap and
+                          mobile navigation
+                        </li>
+                        <li>
+                          Known limitations: legacy private-platform scaffold removal was deferred
+                          in this historical phase
+                        </li>
+                        <li>
+                          Rollback notes: restore the previous PHP public entrypoint and release
+                          records if the static migration must be reverted
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v101b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v1.0.1b"
+                  data-date="2026-06-16"
+                  data-status="beta"
+                  data-type="patch"
+                  data-tags="changed fixed internal-only"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v1.0.1b</span>
+                      <span class="release-summary-date">2026-06-16</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Synced the earlier public Change Log Hub copy and release messaging with the
+                        APES reference structure while still using the PHP route model.
+                      </p>
+                    </div>
+                  </details>
+                </article>
+
+                <article
+                  id="release-v100b"
+                  class="release-item"
+                  data-release-item
+                  data-version="v1.0.0b"
+                  data-date="2026-06-16"
+                  data-status="beta"
+                  data-type="major"
+                  data-tags="changed security internal-only"
+                >
+                  <details>
+                    <summary>
+                      <span class="release-summary-version">v1.0.0b</span>
+                      <span class="release-summary-date">2026-06-16</span>
+                    </summary>
+                    <div class="release-body">
+                      <h3>Summary</h3>
+                      <p>
+                        Migrated the public MyAPES runtime away from the earlier React and Laravel
+                        split into a PHP-first Cloudron LAMP foundation for the public website and
+                        private application shell.
+                      </p>
+                    </div>
+                  </details>
+                </article>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap footer-shell">
+          <div class="footer-grid">
+            <section class="footer-card">
+              <h2>Public hub</h2>
+              <ul class="clean-list">
+                <li><a href="../resource-hub/index.html">Resource Hub</a></li>
+                <li><a href="../fun-zone/index.html">Fun Zone</a></li>
+                <li><a href="../services/index.html">Services</a></li>
+                <li><a href="../support/index.html">Support</a></li>
+              </ul>
+            </section>
+            <section class="footer-card">
+              <h2>Tools &amp; community</h2>
+              <ul class="clean-list">
+                <li><a href="https://carebase.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES CareBase <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
+                <li><a href="https://apestube.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES Tube <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
+                <li><a href="../apes-communities/index.html">APES Communities</a></li>
+                <li><a href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
+              </ul>
+            </section>
+            <section class="footer-card">
+              <h2>Policies &amp; updates</h2>
+              <ul class="clean-list">
+                <li><a href="../privacy/index.html">Privacy Notice</a></li>
+                <li><a href="../terms/index.html">Terms of Service</a></li>
+                <li><a href="../accessibility/index.html">Accessibility</a></li>
+                <li><a href="../change-log-hub/index.html">Change Log Hub</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="footer-bar">
+            <p>Association of Protecting Exotic Species CIC &middot; CIC No: 16253848</p>
+            <p>
+              Public contact: <a href="mailto:info@apes.org.uk">info@apes.org.uk</a> &middot;
+              <a href="tel:03003020998">0300 302 0998</a>
+            </p>
+            <p>Website version: <a href="../change-log-hub/index.html">MyAPES v3.1.0b</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script defer src="../assets/js/site.js"></script>
+  </body>
+</html>

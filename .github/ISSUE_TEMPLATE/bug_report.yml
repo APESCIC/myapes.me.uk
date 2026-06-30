@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a defect in an APES CIC repository.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include route, viewport, role, data state, and environment where relevant. Do not include secrets or private data.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - low
+        - medium
+        - high
+        - urgent
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation notes
+      description: Local checks, browser preview notes, screenshots, logs with private data removed, or blockers.
+    validations:
+      required: false
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Security, privacy, or UK GDPR concerns
+      description: Do not include private data; describe the concern safely.
+    validations:
+      required: false

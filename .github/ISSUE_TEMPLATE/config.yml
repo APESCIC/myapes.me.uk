@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: APES CIC private or sensitive report
+    url: https://github.com/APESCIC
+    about: Do not put secrets, private data, safeguarding details, or confidential operational information in public issue text.
