@@ -2,6 +2,42 @@
 
 All notable public-facing MyAPES changes are recorded here.
 
+## v3.2.0b - 2026-07-01
+
+Status: Beta
+
+Change type: Minor beta update
+
+Summary: Applied a fun modern MyAPES theme, removed visible external-link text labels from external links, and rerouted public data request and complaint guidance to the MyAPES Account portal.
+
+Detailed changes:
+
+- Refreshed the shared public website theme with a warmer wildlife-inspired palette, softer rounded panels, playful section rhythm and stronger typography.
+- Updated homepage, support, data request, complaint and 404 messaging to align with the new theme and portal-routing approach.
+- Removed visible external-link text labels from external links while retaining safe external-link behavior and screen-reader context.
+- Clarified that data requests and complaints are now dealt with via the secure MyAPES Account portal.
+- Updated public release records and version file (`v3.2.0b`).
+
+Affected areas:
+
+- Public-facing theme and layout
+- Support signposting
+- Data request and complaint routing
+- Accessibility
+- Change Log Hub and version records
+
+Version decision:
+
+- Minor beta public-facing update, version `v3.2.0b`.
+
+Validation:
+
+- `php -l public/template/layout.php`
+- `link-label smoke search across public files`
+- `rg -n "data requests|complaints|MyAPES Account" public`
+- `rg -n "v3.1.1b|v3.2.0b" public`
+- `php -S 127.0.0.1:8080 -t public` route checks (`/`, `/support/`, `/data-requests/`, `/complaints/`, `/sitemap.xml`, `/does-not-exist`)
+
 ## v3.1.1b - 2026-07-01
 
 Status: Beta

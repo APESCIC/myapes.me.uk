@@ -52,7 +52,7 @@ function template_external_nav_link(string $href, string $label): string
 {
     return '<a class="nav-account-link" href="' . template_e($href) . '" target="_blank" rel="noopener noreferrer">'
         . template_e($label)
-        . ' <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a>';
+        . '<span class="sr-only">, opens external website</span></a>';
 }
 
 function template_render_page_start(array $page): void
@@ -139,10 +139,10 @@ function template_render_page_end(): void
     echo '<section class="footer-card">';
     echo '<h2>Tools &amp; community</h2>';
     echo '<ul class="clean-list">';
-    echo '<li><a href="https://carebase.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES CareBase <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>';
-    echo '<li><a href="https://apestube.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES Tube <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>';
+    echo '<li><a href="https://carebase.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES CareBase <span class="sr-only">, opens external website</span></a></li>';
+    echo '<li><a href="https://apestube.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES Tube <span class="sr-only">, opens external website</span></a></li>';
     echo '<li><a href="/apes-communities/">APES Communities</a></li>';
-    echo '<li><a href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>';
+    echo '<li><a href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="sr-only">, opens external website</span></a></li>';
     echo '</ul>';
     echo '</section>';
 
