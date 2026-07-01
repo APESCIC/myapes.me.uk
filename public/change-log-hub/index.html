@@ -38,7 +38,7 @@
             <a href="../fun-zone/index.html">Fun Zone</a>
             <a href="../support/index.html">Support</a>
             <a href="../change-log-hub/index.html" aria-current="page">Updates</a>
-            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a>
+            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="sr-only">, opens external website</span></a>
           </nav>
           <button
             class="menu-toggle"
@@ -61,7 +61,7 @@
             <a href="../fun-zone/index.html">Fun Zone</a>
             <a href="../support/index.html">Support</a>
             <a href="../change-log-hub/index.html" aria-current="page">Updates</a>
-            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a>
+            <a class="nav-account-link" href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="sr-only">, opens external website</span></a>
           </nav>
         </div>
       </header>
@@ -76,9 +76,9 @@
                 compliance changes and internal platform maintenance.
               </p>
               <div class="badge-row">
-                <span class="pill">Current version v3.1.1b</span>
+                <span class="pill">Current version v3.2.0b</span>
                 <span class="pill is-warm">Minor beta update</span>
-                <span class="pill">Public resource hub</span>
+                <span class="pill">Modern theme</span>
               </div>
               <div class="hero-actions">
                 <a class="button button-secondary" href="#release-list">Expand all releases</a>
@@ -147,11 +147,66 @@
               </div>
 
               <div id="release-list" class="release-list">
-                <article
-                  id="release-v311b"
+<article
+                  id="release-v320b"
                   class="release-item"
                   data-release-item
                   data-current="true"
+                  data-version="v3.2.0b"
+                  data-date="2026-07-01"
+                  data-status="beta"
+                  data-type="minor"
+                  data-tags="changed accessibility public-facing support routing"
+                >
+                  <details open>
+                    <summary>
+                      <span class="release-summary-version">v3.2.0b</span>
+                      <span class="release-summary-date">2026-07-01</span>
+                    </summary>
+                    <div class="release-body">
+                      <div class="badge-row release-badges">
+                        <span class="pill">Version v3.2.0b</span>
+                        <span class="pill">Beta</span>
+                        <span class="pill">Changed</span>
+                        <span class="pill">Public-facing</span>
+                        <span class="pill">Support routing</span>
+                      </div>
+                      <h3>Summary</h3>
+                      <p>
+                        Applied the fun modern MyAPES theme, removed visible external-link labels,
+                        and clarified that data requests and complaints are now dealt with via the
+                        secure MyAPES Account portal.
+                      </p>
+                      <h3>Detailed changes</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Refreshed the shared website theme with warmer wildlife-inspired colours, softer rounded panels and stronger typography.</li>
+                        <li>Updated homepage, support, data request, complaint and 404 messaging for portal-aware support signposting.</li>
+                        <li>Removed visible external-link labels while keeping safe link attributes and screen-reader context.</li>
+                        <li>Updated release records and version metadata to <code>v3.2.0b</code>.</li>
+                      </ul>
+                      <h3>Affected areas</h3>
+                      <ul class="clean-list mini-list">
+                        <li>Public-facing theme and layout</li>
+                        <li>Support, data request and complaint routes</li>
+                        <li>Accessibility and external-link presentation</li>
+                        <li>Change Log Hub and public version records</li>
+                      </ul>
+                      <h3>Validation</h3>
+                      <ul class="clean-list mini-list">
+                        <li><code>php -l public/template/layout.php</code></li>
+                        <li><code>link-label smoke search across public files</code></li>
+                        <li><code>rg -n "data requests|complaints|MyAPES Account" public</code></li>
+                        <li><code>rg -n "v3.1.1b|v3.2.0b" public</code></li>
+                        <li>Local preview route checks for homepage, support, data requests, complaints, sitemap and 404 fallback.</li>
+                      </ul>
+                    </div>
+                  </details>
+                </article>
+
+                                <article
+                  id="release-v311b"
+                  class="release-item"
+                  data-release-item
                   data-version="v3.1.1b"
                   data-date="2026-07-01"
                   data-status="beta"
@@ -804,10 +859,10 @@
             <section class="footer-card">
               <h2>Tools &amp; community</h2>
               <ul class="clean-list">
-                <li><a href="https://carebase.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES CareBase <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
-                <li><a href="https://apestube.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES Tube <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
+                <li><a href="https://carebase.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES CareBase <span class="sr-only">, opens external website</span></a></li>
+                <li><a href="https://apestube.apes.org.uk/" target="_blank" rel="noopener noreferrer">APES Tube <span class="sr-only">, opens external website</span></a></li>
                 <li><a href="../apes-communities/index.html">APES Communities</a></li>
-                <li><a href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="external-indicator" aria-hidden="true">Ext</span><span class="sr-only">, opens external website</span></a></li>
+                <li><a href="https://account.myapes.me.uk/" target="_blank" rel="noopener noreferrer">MyAPES Account <span class="sr-only">, opens external website</span></a></li>
               </ul>
             </section>
             <section class="footer-card">
@@ -826,7 +881,7 @@
               Public contact: <a href="mailto:info@apes.org.uk">info@apes.org.uk</a> &middot;
               <a href="tel:03003020998">0300 302 0998</a>
             </p>
-            <p>Website version: <a href="../change-log-hub/index.html">MyAPES v3.1.0b</a></p>
+            <p>Website version: <a href="../change-log-hub/index.html">MyAPES v3.2.0b</a></p>
           </div>
         </div>
       </footer>
