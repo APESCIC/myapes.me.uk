@@ -240,6 +240,32 @@ document.addEventListener("DOMContentLoaded", () => {
     renderResults();
   };
 
+  const initializeProtectedEmails = () => {
+    const links = Array.from(document.querySelectorAll(".js-protected-email"));
+
+    links.forEach((link) => {
+      if (!(link instanceof HTMLAnchorElement)) {
+        return;
+      }
+
+      const user = (link.getAttribute("data-user") ?? "").trim();
+      const domain = (link.getAttribute("data-domain") ?? "").trim();
+
+      if (!user || !domain) {
+        return;
+      }
+
+      const address = `${user}@${domain}`;
+      link.href = `mailto:${address}`;
+      link.rel = "nofollow";
+
+      if (link.getAttribute("data-show-address") === "true") {
+        link.textContent = address;
+      }
+    });
+  };
+
   initializeNavigation();
   initializeReleaseHub();
+  initializeProtectedEmails();
 });

@@ -56,7 +56,19 @@ For PHP/HTML editing in JetBrains IDEs:
 
 - Public release records: `public/CHANGELOG.md`
 - Change log hub page: `public/change-log-hub/index.html`
-- Site version: `public/VERSION`
+- Site version: `public/VERSION` (`v3.2.2b`)
+- Repository version: `VERSION` (`v3.2.2b`)
+
+## Support and community
+
+- Public website help: [MyAPES Support](https://myapes.me.uk/support/)
+- Public postal address: 40 Morris Street, St Helens, Merseyside, WA9 3EN
+- Public telephone: [01744 374 015](tel:01744374015)
+- Public email: shown on the [Contact](https://myapes.me.uk/contact/) page after the page loads, with harvest protection and `rel="nofollow"`
+- Maintainers: [APES CIC](https://github.com/APESCIC)
+
+Do not include credentials, private service details, personal data,
+safeguarding information or confidential case material in a public issue.
 
 ## Notes
 

@@ -2,6 +2,40 @@
 
 All notable public-facing MyAPES changes are recorded here.
 
+## v3.2.2b - 2026-08-19
+
+Status: Beta
+
+Change type: Patch
+
+Summary: Updated public contact details to the St Helens address and new telephone number, and protected the public email from automated harvesting.
+
+Detailed changes:
+
+- Added the public postal address to the Contact page and shared footers.
+- Replaced the previous 0300 telephone number with 01744 374 015.
+- Assembled the public email mailto in the browser from split attributes, with `rel="nofollow"`, so page source does not contain a harvestable mailbox.
+- Pointed README readers to the Contact page for the protected public email.
+- Synchronized footer, template, sitemap and public release records at `v3.2.2b`.
+
+Affected areas:
+
+- Contact page
+- Shared public footers and PHP layout template
+- Email harvest protection
+- README support details
+- Sitemap, Change Log Hub and public version records
+
+Version decision:
+
+- Patch beta public contact-details release, version `v3.2.2b`.
+
+Validation:
+
+- `php -l public/template/layout.php`
+- Source assertions for the new address and telephone, absence of the old 0300 number, and absence of a concatenated public email in `public/`
+- Local preview of `/contact/`, `/` and `/privacy/`
+
 ## v3.2.0b - 2026-07-01
 
 Status: Beta
