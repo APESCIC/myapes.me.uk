@@ -159,8 +159,9 @@ function template_render_page_end(): void
     echo '</div>';
     echo '<div class="footer-bar">';
     echo '<p>Association of Protecting Exotic Species CIC · CIC No: 16253848</p>';
-    echo '<p>Public contact: <a href="mailto:info@apes.org.uk">info@apes.org.uk</a> · <a href="tel:03003020998">0300 302 0998</a></p>';
-    echo '<p>Website version: <a href="/change-log-hub/">MyAPES v3.1.0b</a></p>';
+    echo '<p>40 Morris Street, St Helens, Merseyside, WA9 3EN</p>';
+    echo '<p>Public contact: <a class="js-protected-email" href="/contact/" data-user="info" data-domain="apes.org.uk" data-show-address="true" rel="nofollow">Email APES</a> · <a href="tel:01744374015">01744 374 015</a></p>';
+    echo '<p>Website version: <a href="/change-log-hub/">MyAPES v3.2.2b</a></p>';
     echo '</div>';
     echo '</div>';
     echo '</footer>';
